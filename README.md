@@ -54,6 +54,13 @@ vortex-mp3-downloader/
 ├── services/
 │   ├── cloudflare_r2.py    # Lógica de subida/descarga a R2
 │   └── mp3_download.py     # Lógica de extracción y conversión de audio
+├── views/
+│   ├── router.py           # Rutas de la interfaz web
+│   ├── templates/
+│   │   └── index.html      # Página principal
+│   └── static/
+│       ├── styles.css      # Estilos de la UI
+│       └── app.js          # Lógica del frontend
 ├── main.py                 # Punto de entrada de la aplicación FastAPI
 ├── requirements.txt        # Dependencias de Python
 ├── Dockerfile              # Imagen de producción
@@ -239,6 +246,17 @@ curl "http://localhost:8000/health"
 
 ---
 
+## 🌐 Interfaz Web
+
+Además de la API, el proyecto incluye una interfaz web en `http://localhost:8000/` con:
+
+- Formulario para pegar URLs de YouTube
+- Lista de descargas recientes con actualización en tiempo real
+- Botón de descarga directa del MP3 cuando finaliza el procesamiento
+- Diseño responsive y moderno (modo oscuro)
+
+---
+
 ## 📖 API
 
 | Método | Endpoint              | Descripción                            |
@@ -246,6 +264,7 @@ curl "http://localhost:8000/health"
 | `POST` | `/download`           | Inicia la descarga de un MP3 desde URL |
 | `GET`  | `/download/{id}`      | Obtiene el estado de una descarga      |
 | `GET`  | `/download/{id}/file`  | Descarga el archivo MP3 resultante     |
+| `GET`  | `/downloads`          | Lista las últimas 20 descargas         |
 | `GET`  | `/health`             | Health check del servicio              |
 
 La documentación completa de la API está disponible en `/docs` (Swagger UI) y `/redoc` (ReDoc).
