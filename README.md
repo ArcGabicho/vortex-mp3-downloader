@@ -1,7 +1,7 @@
 # Vortex MP3 Downloader
 
 <p align="center">
-  <img src="https://imgur.com/2f0d7887-418f-421b-bab8-8008feaa9206" alt="Vortex MP3 Downloader">
+  <img src="https://i.imgur.com/xwU0wIJ.png" alt="Vortex MP3 Downloader">
 </p>
 
 <p align="center">
