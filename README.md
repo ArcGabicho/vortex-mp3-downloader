@@ -1,7 +1,7 @@
-# Vortex MP3 Downloader
+# Music MP3 Downloader
 
 <p align="center">
-  <img src="https://i.imgur.com/xwU0wIJ.png" alt="Vortex MP3 Downloader">
+  <img src="https://i.imgur.com/2lcUDNj.png" alt="Vortex MP3 Downloader">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 </p>
 
-**Vortex MP3 Downloader** es un servicio web gratuito construido con **FastAPI** que permite descargar audio en formato MP3 a partir de URLs de YouTube. El proyecto está diseñado con una arquitectura moderna y escalable usando **PostgreSQL** como base de datos y **Cloudflare R2** para el almacenamiento de objetos.
+**Music MP3 Downloader** es un servicio web gratuito construido con **FastAPI** que permite descargar audio en formato MP3 a partir de URLs de YouTube. El proyecto está diseñado con una arquitectura moderna y escalable usando **PostgreSQL** como base de datos y **Cloudflare R2** para el almacenamiento de objetos.
 
 ## ✨ Características
 
@@ -39,7 +39,7 @@
 ## 📦 Estructura del Proyecto
 
 ```
-vortex-mp3-downloader/
+music-mp3-downloader/
 ├── config/
 │   ├── cloudflare.py       # Configuración de Cloudflare R2
 │   └── database.py         # Configuración y sesión de base de datos
@@ -76,7 +76,7 @@ vortex-mp3-downloader/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/ArcGabicho/vortex-mp3-downloader.git && cd vortex-mp3-downloader
+git clone https://github.com/ArcGabicho/music-mp3-downloader.git && cd music-mp3-downloader
 ```
 
 ### 2. Configurar variables de entorno
@@ -135,13 +135,13 @@ docker compose down
 Asegúrate de tener PostgreSQL 16 corriendo y crea la base de datos:
 
 ```bash
-createdb vortex
+createdb music_mp3
 ```
 
 O desde psql:
 
 ```sql
-CREATE DATABASE vortex;
+CREATE DATABASE music_mp3;
 ```
 
 #### 4.2. Crear entorno virtual e instalar dependencias
